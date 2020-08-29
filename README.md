@@ -78,6 +78,15 @@ _I_ walk through the material.
 - Move on to the next exercise.
 - Repeat.
 
+### View Slides
+
+- Go to www.monica.dev/gatsbyworkshop
+- Or in this repo:
+  - `cd slides`
+  - `npm install`
+  - `npm run dev`
+  - View slides locally at: [http://localhost:3000/](http://localhost:3000/)
+
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org

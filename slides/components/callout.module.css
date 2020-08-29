@@ -1,0 +1,49 @@
+.infoBox::before,
+.infoBox.danger::before,
+.infoBox.info::before,
+.infoBox.garden::before,
+.infoBox.book::before {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  position: absolute;
+  left: -1.2rem;
+  border-radius: 50%;
+  align-items: center;
+  top: -0.8rem;
+}
+
+.infoBox.book::before {
+  content: '📚';
+  background-color: #44a9ba;
+}
+
+.infoBox.info::before {
+  content: '🔑';
+  background-color: #b4aaff;
+}
+
+.infoBox.danger::before {
+  content: '⚠️';
+  background-color: #ff7828;
+}
+
+.infoBox.garden::before {
+  content: '🌻';
+  background-color: #72bc23;
+}
+
+.infoBox a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  border-bottom: none;
+  background-image: linear-gradient(
+    to top,
+    rgba(180, 170, 255, 0.4) 0%,
+    rgba(180, 170, 255, 0.4) 30%,
+    transparent 40%,
+    transparent 100%
+  );
+}
