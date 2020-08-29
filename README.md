@@ -1,10 +1,7 @@
 <div> 
   <h1 align="center">Gatsby Workshop</h1>
-  <strong>
-    Building a full React application
-  </strong>
   <p>
-    This workshop covers the fundamentals of developing fast, accessible sites with Gatsby, a React framework, and dive deep into the building blocks you’ll need to build your own custom Gatsby sites.
+    This workshop covers the fundamentals of developing fast, accessible sites with [Gatsby](https://www.gatsbyjs.com/), a React framework, and dive deep into the building blocks you’ll need to build your own custom Gatsby sites.
     
    After completing a mix of lectures and exercises you’ll be able to build a Gatsby site from the ground up and deploy it live. In particular, you’ll learn the ins and outs of creating Gatsby sites, from selecting a starter or theme, using GraphQL to generate the data layer, making Markdown content interactive with MDX, deploying your site, and more!
 
