@@ -1,8 +1,9 @@
-![Presentation Mode](./screenshots/next-mdx-deck-example.gif)
+This presentation was written with Next MDX Deck using MDX, React, and [Next.js](https://nextjs.org/).
 
-# Next MDX Deck
+## Getting Started
 
-Create presentation decks using MDX, React, and [Next.js](https://nextjs.org/).
+1. Install dependencies: `npm install` or `yarn`
+2. Run the dev server: `npm run dev` or `yarn dev`
 
 ## Features
 
@@ -13,15 +14,7 @@ Create presentation decks using MDX, React, and [Next.js](https://nextjs.org/).
 - ♻️ Sync slides between browser tabs
 - 👨‍💻 Presentation Mode
 - 📝 Speaker Notes
-
-## Getting Started
-
-1. Clone the project: `git clone https://github.com/whoisryosuke/next-mdx-deck`
-2. Install dependencies: `npm i` or `yarn`
-3. Run the dev server: `npm run dev` or `yarn dev`
-4. Edit the first slide in `/slides/1.mdx` and save to [**see changes**](http://localhost:3000/)!
-
-When you're done, run `npm run build && npm run export` or `yarn build && yarn export` will create a static app you can deploy anywhere (or use locally). See below for more details.
+  When you're done, run `npm run build && npm run export` or `yarn build && yarn export` will create a static app you can deploy anywhere (or use locally). See below for more details.
 
 ### Deploying
 
@@ -34,7 +27,7 @@ This project is easy to build locally or using a host with build services (like 
 
 ### 💬 Changing the Title/Date/etc
 
-The default theme includes a title, date, author (and link to the author's website) in of the `<Header>` component. You can edit this data inside the `site.config.js` file. 
+The default theme includes a title, date, author (and link to the author's website) in of the `<Header>` component. You can edit this data inside the `site.config.js` file.
 
 ### ✍️ Writing JSX
 
@@ -55,7 +48,7 @@ Slide pages are incremental, starting at 1. If you need a new page, create a new
 
 ### 🎨 Theming the Slideshow
 
-Theming is accomplished with **CSS custom properties** and/or **Styled Components**. 
+Theming is accomplished with **CSS custom properties** and/or **Styled Components**.
 
 Design tokens are stored as CSS custom properties inside the SlidePage layout (`/layouts/SlidePage.jsx`), which are injected into the app using Styled Component's global styling utility. There you can change the color of text, background colors, fonts, etc.
 
@@ -86,9 +79,9 @@ This way you can view your presentation on one monitor, while displaying the sli
 
 Speaker notes are only displayed during presentation mode. This allows you to write private notes to yourself that you can see in "presentation" mode, while the audience only sees the other slide content in "slideshow" mode.
 
-Speaker notes can contain **Markdown**, **MDX/JSX**, and even **HTML** *(as JSX)*. The notes are displayed in a scrollable window to the side of slide content during "presenation" mode.
+Speaker notes can contain **Markdown**, **MDX/JSX**, and even **HTML** _(as JSX)_. The notes are displayed in a scrollable window to the side of slide content during "presenation" mode.
 
-To create speaker notes, you use the `<SpeakerNotes>` component inside of your MDX files. No need to import it, it's [automatically imported into any MDX slide page](components/MDXProvider.jsx). You can also use it multiple times within the same slide, all the notes (per slide) will be combined. 
+To create speaker notes, you use the `<SpeakerNotes>` component inside of your MDX files. No need to import it, it's [automatically imported into any MDX slide page](components/MDXProvider.jsx). You can also use it multiple times within the same slide, all the notes (per slide) will be combined.
 
 Here's an example:
 
@@ -97,7 +90,7 @@ Slide content would go here.
 
 <SpeakerNotes>
     
-Private notes here. 
+Private notes here.
 
 # Even Markdown!
 
@@ -106,7 +99,7 @@ Private notes here.
 
 ### Adding/replacing components in MDX
 
-MDX allows you to use JSX inline or import components, but if you want to use a React component across all slides without importing it, you can use the `<MDXProvider>` component. This component wraps the app in a "context" that provides MDX with components to pass into the parser. 
+MDX allows you to use JSX inline or import components, but if you want to use a React component across all slides without importing it, you can use the `<MDXProvider>` component. This component wraps the app in a "context" that provides MDX with components to pass into the parser.
 
 This also lets you replace Markdown parsed HTML elements with React components, like replacing `## Headings` with `<Heading as="h2">` instead of the default `<h2>`. This comes in handy if you have a React component library and you want to use it's primitives like `<Text>` for paragraphs.
 
@@ -116,7 +109,7 @@ You can pass new components, or swap HTML elements inside the `mdComponents` obj
 const mdComponents = {
   h1: (props) => <h1 {...props} />,
   CustomButton,
-}
+};
 ```
 
 ## Learn More
