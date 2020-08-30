@@ -1,6 +1,6 @@
 # 01 &bull; Customize Gatsby Site Information
 
-![01_metadata-on-site](/Users/monicafresh/Dev/gatsby-workshop/site/INSTRUCTIONS/media/01_metadata-on-site.png)
+![01_metadata-on-site](./media/01_metadata-on-site.png)
 
 ## Background 📚
 
