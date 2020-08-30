@@ -4,7 +4,7 @@
 
 ## Background 📚
 
-Generally important Gatsby site configuration lives within the `gatsby-config.js` file at the root of the site folder. You'll usally see a `gatsby-config.js` file that looks like:
+Generally important Gatsby site configuration lives within the `gatsby-config.js` file at the root of the site folder. You'll usually see a `gatsby-config.js` file that looks like:
 
 ```
 module.exports = {

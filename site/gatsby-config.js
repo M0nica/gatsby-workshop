@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    /* 👀 rename the site title, description and tell us who you are.*/
     title: `Gatsby Starter Blog`,
     author: {
       name: `Monica Powell`,
@@ -9,6 +10,7 @@ module.exports = {
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
+      /* 🔑 If you don't have a Twitter use this or another placeholder for now*/
       twitter: `waterproofheart`,
     },
   },
