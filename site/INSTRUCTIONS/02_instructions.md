@@ -66,26 +66,15 @@ and returns data that looks like:
 }
 ```
 
-If you are running the site locally then you see a live interactive version [view the results of this query in GraphiQL](<http://localhost:8000/__graphql?query=%7B%0A%20%20allMarkdownRemark(sort%3A%20%7Bfields%3A%20%5Bfrontmatter___date%5D%2C%20order%3A%20DESC%7D)%20%7B%0A%20%20%20%20edges%20%7B%0A%20%20%20%20%20%20node%20%7B%0A%20%20%20%20%20%20%20%20excerpt%0A%20%20%20%20%20%20%20%20fields%20%7B%0A%20%20%20%20%20%20%20%20%20%20slug%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20frontmatter%20%7B%0A%20%20%20%20%20%20%20%20%20%20date(formatString%3A%20%22MMMM%20DD%2C%20YYYY%22)%0A%20%20%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20%20%20description%0A%20%20%20%20%20%20%20%20%20%20url%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=undefined>).
+If you are running the site locally then you can [view the results of this query in GraphiQL](<http://localhost:8000/__graphql?query=%7B%0A%20%20allMarkdownRemark(sort%3A%20%7Bfields%3A%20%5Bfrontmatter___date%5D%2C%20order%3A%20DESC%7D)%20%7B%0A%20%20%20%20edges%20%7B%0A%20%20%20%20%20%20node%20%7B%0A%20%20%20%20%20%20%20%20excerpt%0A%20%20%20%20%20%20%20%20fields%20%7B%0A%20%20%20%20%20%20%20%20%20%20slug%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20frontmatter%20%7B%0A%20%20%20%20%20%20%20%20%20%20date(formatString%3A%20%22MMMM%20DD%2C%20YYYY%22)%0A%20%20%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20%20%20description%0A%20%20%20%20%20%20%20%20%20%20url%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=undefined>).
 
 ## Exercise 🤓
 
-Create a new directory `websites` and make the files within it accessible to GraphQL. When you successfully complete this exercise you should the content you added in `content/websites/jamstack.md` appear on the homepage.
+Create a new directory `websites` and make the files within it accessible to GraphQL. When you successfully complete this exercise you should see new content related to Jamstack Conf appear on the homepage.
 
 ### Files 🗂
 
 - gatsby-config.js
-- create `content/websites`
-- add a file to `content/websites/jamstack.md` with the below content:
-
-```
----
-title: Jamstack Conf
-date: "2015-05-01T22:12:03.284Z"
-description: "Conference website for Jamstack Conf"
-url: "https://www.jamstackconf.com"
----
-```
 
 ## Extra Credit 💯
 
