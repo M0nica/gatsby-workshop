@@ -2,11 +2,10 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
 const Hero = () => (
   <div className="text-center">
-    <h1 className="text-5xl font-extrabold text-blue-500 leading-9 tracking-tight font-inter">
-      Home
+    <h1 className="text-5xl font-extrabold text-blue-500 leading-9 tracking-tight">
+      About
     </h1>
     <br />
     <h2 className="text-3xl font-bold text-gray-800 leading-8 tracking-tight">
@@ -31,17 +30,14 @@ const Hero = () => (
   </div>
 );
 
-function IndexPage() {
+function AboutPage() {
   return (
     <Layout>
-      <SEO
-        title="Home"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-      />
+      <SEO title="About" keywords={[`About`]} />
 
       <Hero />
     </Layout>
   );
 }
 
-export default IndexPage;
+export default AboutPage;

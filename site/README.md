@@ -1,99 +1,113 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's blog starter
-</h1>
+# Custom Tailwind Starter
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/Mozart409/gatsby-custom-tailwind)
+[![license](https://img.shields.io/github/stars/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#license)
+[![forks](https://img.shields.io/github/forks/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#forks)
+[![stars](https://img.shields.io/github/stars/Mozart409/gatsby-custom-tailwind?style=for-the-badge)](#stars)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+## [Demo](https://gct.mozart409.space)
 
-## 🚀 Quick start
+<div align="center">
+  <img src="https://image.ibb.co/cJjPN7/gatsby_tailwind.png" alt="Gatsby and Tailwind CSS logos">
+</div>
 
-1.  **Create a Gatsby site.**
+<div align="center">
+  <strong>A <a href="https://www.gatsbyjs.org/">Gatsby</a> starter styled using <a href="https://tailwindcss.com/">Tailwind</a>, a utility-first CSS framework.</strong><br />
+  Uses <a href="https://www.purgecss.com/">Purgecss</a> to remove unused CSS.<br />
+  <br />
+  <br />
+</div>
 
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
+## Lighthouse Audit
 
-    ```shell
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
-    ```
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586015947/GitHub%20Screenshots/Gatsby-Custom-Tailwind/Lighthouse.png" alt="Lighthouse Audit">
 
-1.  **Start developing.**
+## Features
 
-    Navigate into your new site’s directory and start it up.
+#### Custom Fonts
 
-    ```shell
-    cd my-blog-starter/
-    gatsby develop
-    ```
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586065286/GitHub%20Screenshots/Gatsby-Custom-Tailwind/gatsby-browser.png" alt="Custom Fonts" style="width:33%">
 
-1.  **Open the source code and start editing!**
+You can import your npm packaged fonts via the <code>gatsby-browser.js</code>
 
-    Your site is now running at `http://localhost:8000`!
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586066043/GitHub%20Screenshots/Gatsby-Custom-Tailwind/Tailwind.config.png" alt="Tailwind.config.js" style="width:33%">
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
+Those fonts can be imported via the tailwind.config.js and used globally, e.g. <code>className="font-inter"</code> or <code>className="font-body"</code>. You can change the names as you wish. Remember "Spaces" wont be escaped, so use "Open Sans" instead.
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+#### gatsby-plugin-react-helmet
 
-## 🧐 What's inside?
+For SEO optimization
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+#### gatsby-plugin-purgecss
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+To remove unused CSS styles <br>
+<img src="https://res.cloudinary.com/gooddeed/image/upload/v1586015946/GitHub%20Screenshots/Gatsby-Custom-Tailwind/purgecss.png" alt="purgecss" >
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+#### Husky + pretty-quick
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+```sh
+ "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+```
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+Automatic prettify all staged files before you commit.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+## What is Tailwind?
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+> "Tailwind is a utility-first CSS framework for rapidly building custom user interfaces."
+> –[Tailwind](https://tailwindcss.com)
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/gatsby-config/) for more detail).
+## What is Gatsby?
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+> "Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps." -[Gatsby](https://www.gatsbyjs.org/)
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+## Get started
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+Install Gatsby CLI:
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+```sh
+yarn global add gatsby-cli
+npm i --global gatsby-cli
+```
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+Create new Gatsby project using this starter:
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+```sh
+gatsby new my-new-website https://github.com/Mozart409/gatsby-custom-tailwind
+```
 
-## 🎓 Learning Gatsby
+Change the directory and start the dev server.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
+```sh
+cd my-new-website
+yarn start or npm start
+```
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+## Build your site
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+Each time you build, the cache and public folder will be deleted to prevent stale data and files. The production build will be served with zeit/serve server. Alternatively you can build without deleting the cache and public folder.
 
-## 💫 Deploy
+```sh
+"build": "gatsby clean && gatsby build",
+"build:noclean": "gatsby build",
+"serve": "serve -l 9000 public",
+"prod": "yarn build && yarn serve",
+```
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)
+## Format and lint
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-blog)
+- `yarn fix` or `npm run fix` - Run Prettier and ESLint with the `--fix` option
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+## Resources
+
+- [Gatsby documentation](https://www.gatsbyjs.org/docs/)
+- [Tailwind documentation](https://tailwindcss.com/docs/what-is-tailwind/)
+- [Prettier documentation](https://prettier.io/docs/en/index.html)
+- [ESLint documentation](https://eslint.org/docs/user-guide/configuring)
+
+## License
+
+MIT
