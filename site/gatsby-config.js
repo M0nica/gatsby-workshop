@@ -1,7 +1,7 @@
 /*eslint no-template-curly-in-string:0*/
 module.exports = {
   siteMetadata: {
-    title: `X Conf`,
+    title: `SketchXConf 2020`,
     description: `description`,
     author: `@you`,
     siteUrl: `https://monica.dev/gatsbyworkshop`,
@@ -17,7 +17,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/images/robot-icon.png`,
+        icon: `src/images/pencil-icon.png`,
       },
     },
     `gatsby-plugin-postcss`,

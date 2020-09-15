@@ -11,7 +11,7 @@ export default function footer() {
               to="/"
               className="no-underline text-gray-700 hover:text-gray-500"
             >
-              &copy; X Conf
+              &copy; SketchXConf 2020
             </Link>
           </p>
 
