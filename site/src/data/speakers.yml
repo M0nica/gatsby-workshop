@@ -1,0 +1,9 @@
+- name: "Angela Toad"
+  title: "Introduction to Sketching Animals"
+  time: "12:00"
+  avatar: "woman-generated-avatar-1.png"
+
+- name: "Larry Foam"
+  title: "Getting Started with Sketchnoting"
+  time: "10:00"
+  avatar: "man-generated-avatar-1.png"
