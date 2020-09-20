@@ -40,6 +40,7 @@ function Header({ siteTitle }) {
             {NavLinks &&
               NavLinks.map((node) => (
                 <Link
+                  key={node.href}
                   to={node.href}
                   className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-black"
                 >

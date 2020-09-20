@@ -12,11 +12,11 @@ const Hero = () => (
       Cyberspace
     </h1>
     <br />
-    <div class="grid grid-cols-6 gap-4">
-      <div class="col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-4 xl:col-span-4...">
+    <div className="grid grid-cols-6 gap-4">
+      <div className="col-span-6 sm:col-span-6 md:col-span-4 lg:col-span-4 xl:col-span-4...">
         <img src={sketchnoting} alt="illustrated woman doodling" />
       </div>
-      <div class="text-lg text-gray-700 col-span-6 sm:col-span-6 md:col-span-2 lg:col-span-2 xl:col-span-2...">
+      <div className="text-lg text-gray-700 col-span-6 sm:col-span-6 md:col-span-2 lg:col-span-2 xl:col-span-2...">
         <h2 className="text-3xl font-bold text-gray-800 leading-8 tracking-tight">
           Join Us!
         </h2>{" "}

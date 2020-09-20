@@ -4,10 +4,14 @@ import Avatar from "../images/woman-generated-avatar-1.png";
 
 export default function speakerCard({ speakers }) {
   return (
-    <div class="flex items-center flex-wrap ">
+    <div className="flex items-center flex-wrap ">
       {speakers.map(({ name, link }) => (
-        <div class="w-1/3 p-2">
-          <img class="rounded-full " src={Avatar} alt={`Avatar of ${name}`} />
+        <div className="w-1/3 p-2">
+          <img
+            className="rounded-full "
+            src={Avatar}
+            alt={`Avatar of ${name}`}
+          />
           <Link to={link ? link : ""}> {name} </Link>
         </div>
       ))}
