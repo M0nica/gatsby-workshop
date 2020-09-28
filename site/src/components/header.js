@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 import Logo from "../images/pencil-icon.png";
-
+import Banner from "../components/banner";
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false);
   const NavLinks = [
@@ -12,6 +12,7 @@ function Header({ siteTitle }) {
 
   return (
     <nav className="bg-white">
+      <Banner />
       <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
         <Link to="/" className="flex items-center no-underline text-black">
           <img src={Logo} alt="Logo" className="w-8" />
