@@ -35,9 +35,7 @@ In our case in addition to using the gatsby-source-filesystem plugin we should u
  
  
 ## Exercise 🤓
-Add a new data type for conference speakers and render high-level talk information (talk/speaker/time) on main page.
-
-You will need to configure `gatsby-transformer-yaml` and `gatsby-source-filesystem` in the `gatsby-config` file. 
+Add a new data type for conference speakers. Hint: You will need to configure `gatsby-transformer-yaml` and `gatsby-source-filesystem` in the `gatsby-config` file. 
 
 ## Files 🗂
 - site/gatsby-config.js
