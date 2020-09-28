@@ -1,12 +1,8 @@
-# 01 &bull; Customize Gatsby Site Information
-
-![01_metadata-on-site](./media/01_metadata-on-site.png)
-
+# 01 • Customize Gatsby Site Information
 ## Background 📚
+Generally important Gatsby site configuration and meta data lives within the gatsby-config.js file at the root of the site folder. You'll usually see a gatsby-config.js file that resembles:
 
-Generally important Gatsby site configuration lives within the `gatsby-config.js` file at the root of the site folder. You'll usally see a `gatsby-config.js` file that looks like:
-
-```
+```js
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,
@@ -24,22 +20,20 @@ module.exports = {
 };
 ```
 
-The `siteMetadata` from the `gatsby-config` can be accessed throughout the site via GraphQL queries and is a common pattern for referencing sitewide metadata within Gatsby applications. The array of `plugins` allow you to configure [2300+ Gatsby Plugins](https://www.gatsbyjs.com/plugins) for your site.
+The siteMetadata from the gatsby-config can be accessed throughout the site via GraphQL queries and is a common pattern for referencing sitewide metadata within Gatsby applications. The array of plugins allow you to configure 2300+ Gatsby Plugins for your site. Check out the Gatsby site for more information on the Gatsby Config API. 
 
 ## Exercise 🤓
+Customize the siteMetadata object in the gatsby-config.js with your own information (i.e, name, site title, site description, twitter handle, etc.)
+ 
+Note: Changes to the gatsby-config require restarting the server to see them on the site (i.e. CTRL + C and then run `npm run start`)
 
-Customize the `siteMetadata` object in the `gatsby-config.js` with your own information (i.e, name, site title, site description)
-
-### Files 🗂
-
-`gatsby-config.js`
+## Files 🗂
+- gatsby-config.js
 
 ## Extra Credit 💯
+- Upload a new site icon
 
-Upload a new profile picture
-
-### Files 🗂
-
-` content/assets/profile-pic.png`
-
-`src/components/bio.js`
+## Related Files 🗂
+- src/images/pencil-icon.png
+- gatsby-config.js
+- src/components/header.js

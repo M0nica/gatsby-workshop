@@ -1,81 +1,40 @@
-# 02 &bull; Add New Filesystem Type to Site
 
+# 02 • Make Footer Data Dynamic
 ## Background 📚
+Data is generally accessed in Gatsby sites via the GraphQL query language via either static queries or page queries.  Static means that these queries do not have variables and exist in components that have the same data context throughout the application. Pages within Gatsby the GraphQL queries can dynamically query data depending on the context of the page. The below code snippet shows how to write a static GraphQL query to query the title from the siteMetadata and return the value in the `<h1>` of that component.
 
-Gatsby sites can use GraphQL to interface with external data as well as local file date. The plugin `gatsby-source-filesystem` allows local file to be added to the GraphQL graph.
-
-If you open up this project's `gatsby-config.js` then in the `plugins` array you'll see:
-
-```{
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    }
 ```
-
-This makes all of the markdown content within `content/blog` available to query throughout the Gatsby site.
-
-A sample query to read the data would look like
-
-```{
-  allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
-    edges {
-      node {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+export default function Header() {
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      site {
+        siteMetadata {
           title
-          description
-          url
         }
       }
     }
-  }
+  `)
+ 
+  return (
+    <header>
+      <h1>{data.site.siteMetadata.title}</h1>
+    </header>
+  )
 }
 ```
-
-and returns data that looks like:
-
-```
-{
-  "data": {
-    "allMarkdownRemark": {
-      "edges": [
-        {
-          "node": {
-            "excerpt": "Far far away, behind the word mountains, far from the countries Vokalia and\nConsonantia, there live the blind texts. Separated they live in…",
-            "fields": {
-              "slug": "/new-beginnings/"
-            },
-            "frontmatter": {
-              "date": "May 28, 2015",
-              "title": "New Beginnings",
-              "description": "This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.",
-              "url": null
-            }
-          }
-        },
-      ]
-    }
-  },
-}
-```
-
-If you are running the site locally then you can [view the results of this query in GraphiQL](<http://localhost:8000/__graphql?query=%7B%0A%20%20allMarkdownRemark(sort%3A%20%7Bfields%3A%20%5Bfrontmatter___date%5D%2C%20order%3A%20DESC%7D)%20%7B%0A%20%20%20%20edges%20%7B%0A%20%20%20%20%20%20node%20%7B%0A%20%20%20%20%20%20%20%20excerpt%0A%20%20%20%20%20%20%20%20fields%20%7B%0A%20%20%20%20%20%20%20%20%20%20slug%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20frontmatter%20%7B%0A%20%20%20%20%20%20%20%20%20%20date(formatString%3A%20%22MMMM%20DD%2C%20YYYY%22)%0A%20%20%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20%20%20description%0A%20%20%20%20%20%20%20%20%20%20url%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=undefined>).
-
+ 
+The above example code from: https://www.gatsbyjs.com/docs/use-static-query/
+ 
 ## Exercise 🤓
-
-Create a new directory `websites` and make the files within it accessible to GraphQL. When you successfully complete this exercise you should see new content related to Jamstack Conf appear on the homepage.
-
-### Files 🗂
-
-- gatsby-config.js
+Customize the site footer to render your conference title from siteMetadata instead of the hard-coded value of SketchXConf 2020
+ 
+## Files 🗂
+- src/components/footer.js
 
 ## Extra Credit 💯
+Update the footer to display another data value from the siteMetadata in addition to the conference title.
 
-TBD
+## Related Files 🗂
+- src/components/footer.js

@@ -1,0 +1,17 @@
+
+.cache
+node_modules
+yarn-error.log
+yarn.lock
+
+# Build directory
+/public
+
+# macOS
+.DS_Store
+
+# deployment-specific configs
+now.json
+package-lock.json
+
+.now
