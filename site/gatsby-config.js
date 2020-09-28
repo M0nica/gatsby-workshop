@@ -1,9 +1,9 @@
 /*eslint no-template-curly-in-string:0*/
 module.exports = {
   siteMetadata: {
-    title: `SketchXConf 2020`,
-    description: `description`,
-    author: `@you`,
+    title: `TechNSketchXConf 2020`,
+    description: `An amazing conference to bring together professional and aspriing technical sketch noters.`,
+    author: `@waterproofheart`,
     siteUrl: `https://monica.dev/gatsbyworkshop`,
   },
   plugins: [
@@ -17,7 +17,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/images/pencil-icon.png`,
+        icon: `src/images/paintbrush-icon.png`,
       },
     },
     `gatsby-plugin-postcss`,
