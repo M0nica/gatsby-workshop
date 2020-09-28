@@ -78,6 +78,7 @@ TBD
 
 The exercises each have a branch associated with them. You can find the exercises under `site/INSTRUCTIONS/` in files labelled like `01_instructions.md`. To get the latest working code for an exercise check out the exercise solution branch.
 
+- [00 • Running a Gatsby Application Locally](site/INSTRUCTIONS/00_instructions.md)
 - [01 • Customize Gatsby Site Information](site/INSTRUCTIONS/01_instructions.md)
 - [02 • Make Footer Data Dynamic](site/INSTRUCTIONS/02_instructions.md)
 - [03 • Create a new page in Gatsby](site/INSTRUCTIONS/03_instructions.md)
