@@ -3,9 +3,13 @@
 Gatsby automagically turns Reacts component defined in `src/pages/*`into pages. The page will be created based on the default export in the file. For example you can look at the starter code and see that the component defined in `src/pages/index.js` is used to generate the site’s index.html file. 
  
 ## Exercise 🤓
-1. Create a new file `tickets.js` in `src/pages` and copy and paste the following code:
-
-```
+1. Create a new file `tickets.js` in `src/pages` and copy and paste the below starter code
+2. Go to http://localhost:8000/tickets to view the base tickets page
+3. Update the ticket page to dynamically replace placeholder conference with then name of the conference from the `gatsby-config` file. 
+ 
+## Starter Code for tickets.js
+ 
+ ```
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
  
@@ -43,9 +47,6 @@ function TicketsPage() {
  
 export default TicketsPage;
 ``` 
- 
- 2. Go to http://localhost:8000/tickets to view the base tickets page
- 3. Update the ticket page to dynamically replace placeholder conference with then name of the conference from the `gatsby-config` file. 
  
 ## Files 🗂
 - src/pages/👀
