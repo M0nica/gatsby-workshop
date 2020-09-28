@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+
 const Ticket = ({ title }) => (
   <div className="text-center ">
     <h1 className="text-5xl font-extrabold text-blue-500 leading-9 tracking-tight">
@@ -26,7 +27,7 @@ const Ticket = ({ title }) => (
 
 function TicketsPage() {
   const data = useStaticQuery(graphql`
-    query HeaderQuery {
+    query TicketsQuery {
       site {
         siteMetadata {
           title
