@@ -42,10 +42,12 @@ export default NotFoundPage;
 ```
  
 ## Exercise 🤓
-Update the Header to add a site-wide banner announcing tickets are available to the top of every page. 
-There’s a pre-made Banner component you can use in src/components/banner.js for this exercise.
-You should update the banner so that it has a performant Link to the tickets page. 
-The banner should also dynamically pull in the name of the conference from the site configuration in the gatsby-config 
+- Update the Header to add a site-wide banner announcing tickets are available to the top of every page. 
+- Update the banner component so that it has a performant Link to the tickets page. 
+- The banner should also dynamically pull in the name of the conference from the site configuration in the gatsby-config 
+
+## Starter Code
+- There’s a pre-made Banner component you can use in src/components/banner.js for this exercise. 
  
 ## Files 🗂
 - src/components/header.js
