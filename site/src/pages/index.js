@@ -20,10 +20,10 @@ const Hero = () => (
         <h2 className="text-3xl font-bold text-gray-800 leading-8 tracking-tight">
           Join Us!
         </h2>{" "}
-        Voluptate Lorem laborum eiusmod occaecat fugiat exercitation cupidatat
-        nulla. Consectetur labore aute irure dolore. Lorem adipisicing excepteur
-        mollit nisi non exercitation. Aute quis consequat duis aliquip magna. Et
-        ullamco officia nulla labore exercitation ea officia pariatur excepteur.
+        We're looking forward to gathering virtually in October 2020 for our
+        inaugural conference! Below you can find our schedule and learn more
+        about our dynamic lineup. Be sure to secure a ticket before we sell out
+        as tickets are limited.
       </div>
     </div>
     <br />
