@@ -11,7 +11,7 @@ export default function TalkCard({ talk }) {
           src={`/${avatar}`}
           alt={`Avatar of ${name}`}
         />
-        <div className="text-lg">
+        <div className="text-lg text-left">
           <p className="text-gray-900 leading-none">{name}</p>
           <p className="text-xl text-gray-600">{title}</p>
           <time>{time}</time>
