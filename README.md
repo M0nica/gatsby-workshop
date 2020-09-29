@@ -85,6 +85,7 @@ The exercises each have a branch associated with them. You can find the exercise
 - [04 • Create a new navigation link](site/INSTRUCTIONS/04_instructions.md)
 - [05 • Add site-wide banner](site/INSTRUCTIONS/05_instructions.md)
 - [06 • Adding Speaker/Talk Data Type](site/INSTRUCTIONS/06_instructions.md)
+- [07 • Render Speaker/Talk Data Type](site/INSTRUCTIONS/07_instructions.md)
 
 ### Workflow
 
