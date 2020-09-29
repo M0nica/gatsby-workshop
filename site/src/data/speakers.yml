@@ -1,9 +1,49 @@
 - name: "Angela Toad"
   title: "Introduction to Sketching Animals"
-  time: "12:00"
+  time: "8:00"
   avatar: "woman-generated-avatar-1.png"
 
 - name: "Larry Foam"
   title: "Getting Started with Sketchnoting"
-  time: "10:00"
+  time: "9:00"
   avatar: "man-generated-avatar-1.png"
+
+- name: "Amanda Carr"
+  title: "Introduction to Drawing Underwater"
+  time: "10:00"
+  avatar: "woman-generated-avatar-2.png"
+
+- name: "Leroy Morgan"
+  title: "Examining the Details"
+  time: "11:00"
+  avatar: "man-generated-avatar-2.png"
+
+- name: "Anita Webb"
+  title: "The Finer Side of Sketch Noting"
+  time: "12:00"
+  avatar: "woman-generated-avatar-3.png"
+
+- name: "Ronald Freeman"
+  title: "Drawing Workshhop"
+  time: "13:00"
+  avatar: "man-generated-avatar-3.png"
+
+- name: "Phyllis Carlson"
+  title: "Practice Drawing Session"
+  time: "14:00"
+  avatar: "woman-generated-avatar-4.png"
+
+- name: "Tyrone Reynolds"
+  title: "Exploring Different Mediums"
+  time: "15:00"
+  avatar: "man-generated-avatar-4.png"
+
+- name: "Debra Peterson"
+  title: "Live Drawing"
+  time: "16:00"
+  avatar: "woman-generated-avatar-5.png"
+
+- name: "Francisco Jimenez"
+  title: "Building a Visual Vocabulary"
+  time: "17:00"
+  avatar: "man-generated-avatar-5.png"
