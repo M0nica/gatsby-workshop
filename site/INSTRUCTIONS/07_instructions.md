@@ -51,13 +51,13 @@ and returns data in this shape from GraphQL
 
 ## Exercise 🤓
 
-Render high-level talk information (talk/speaker/time) on the index page.
+- Render high-level talk information (talk/speaker name/time/avatar) on the index page.
 
 ## Starter Code
 
-`src/components/talkCard`
+- Import the `TalkCard` component from `src/components/talkCard` into the `index.js` page and pass in talk information (speaker name, time, title, avatar) as props.
 
-Files 🗂
+## Files 🗂
 
 - `src/components/talkCard`
 - `src/pages/index.js`
