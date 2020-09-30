@@ -62,3 +62,12 @@ and returns data in this shape from GraphQL
 
 - `src/components/talkCard`
 - `src/pages/index.js`
+
+
+
+## Example Solution Code
+- [Exercise 7 - Display Speaker Data](https://github.com/M0nica/gatsby-workshop/pull/10/files)
+
+## Example Solution Demo
+- https://deploy-preview-10--gatsbyjsdemo.netlify.app/
+
