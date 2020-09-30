@@ -29,7 +29,10 @@ const Hero = ({ talks }) => (
       </div>
     </div>
     <br />
-    <h2 className="text-5xl font-extrabold text-blue-500 leading-9 tracking-tight font-inter p-4">
+    <h2
+      className="text-5xl font-extrabold text-blue-500 leading-9 tracking-tight font-inter p-4"
+      id="schedule"
+    >
       Schedule
     </h2>
     {talks.map((talk) => {
