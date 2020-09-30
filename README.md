@@ -89,6 +89,7 @@ The exercises each have a branch associated with them. You can find the exercise
 - 08 • Programmatically Generate Speaker Pages
 - 09 • Link to Speaker Pages
 - 10 • Add Talk Descriptions and Render on Speaker Pages
+- 11 • Add Page Listing All Speakers
 
 ### Workflow
 
