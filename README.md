@@ -70,9 +70,6 @@ yarn start
 
 This should start up your browser. You can also open the production deployment: LINK TBD
 
-## Running the tests
-
-TBD
 
 ### Exercises
 
@@ -93,8 +90,8 @@ The exercises each have a branch associated with them. You can find the exercise
 
 ### Workflow
 
-- Checkout the exercise branch
-- Read through the `INSTRUCTIONS.md`
+- Checkout the main branch
+- Read through the instructions in `site/INSTRUCTIONS` and complete one set of instructions at a time
 - Start exercise
 - Go through every mentioned file and follow the instructions
 - We all come back together
@@ -105,7 +102,7 @@ The exercises each have a branch associated with them. You can find the exercise
 ### View Slides
 
 - Go to www.monica.dev/gatsbyworkshop
-- Or in this repo:
+-  The slides can be run locally from this repo by doing the following:
   - `cd slides`
   - `npm install`
   - `npm run dev`
@@ -115,9 +112,6 @@ The exercises each have a branch associated with them. You can find the exercise
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
 [git]: https://git-scm.com/
-[emojis]: https://github.com/kentcdodds/all-contributors#emoji-key
-[all-contributors]: https://github.com/kentcdodds/all-contributors
 [win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
 [mac-path]: http://stackoverflow.com/a/24322978/971592
-[issue]: https://github.com/kentcdodds/bookshelf/issues/new
 <!-- prettier-ignore-end -->
