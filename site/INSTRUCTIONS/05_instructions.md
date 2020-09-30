@@ -55,3 +55,9 @@ export default NotFoundPage;
 
 ## Extra Credit 💯
 - Make an additional site-wide change to the Layout 
+
+## Example Solution Code
+- [Exercise 5: Add Sitewide Banner ](https://github.com/M0nica/gatsby-workshop/pull/8/files)
+
+## Example Solution Demo
+- https://deploy-preview-8--gatsbyjsdemo.netlify.app/
