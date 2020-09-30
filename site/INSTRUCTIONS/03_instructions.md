@@ -53,3 +53,10 @@ export default TicketsPage;
 
 ## Extra Credit 💯
 Make additional customizations to the /tickets page 
+
+## Example Solution Code
+- [Exercise 3- Add tickets page](https://github.com/M0nica/gatsby-workshop/pull/6/files)
+
+## Example Solution Demo
+- https://deploy-preview-6--gatsbyjsdemo.netlify.app/
+
