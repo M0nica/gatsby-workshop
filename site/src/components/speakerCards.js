@@ -11,7 +11,7 @@ export default function speakerCard({ speakers }) {
             src={node.avatar}
             alt={`Avatar of ${node.name}`}
           />
-          <Link to={node.link ? node.link : ""}> {node.name} </Link>
+          <Link to={`/${node.fields.slug}`}>{node.name} </Link>
         </div>
       ))}
     </div>
