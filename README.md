@@ -58,7 +58,7 @@ To get the app up and running (and really see if it worked), run:
 
 ```shell
 cd site
-npm start
+npm run start
 ```
 
 or
@@ -68,7 +68,7 @@ cd site
 yarn start
 ```
 
-This should start up your browser. You can also open the production deployment: LINK TBD
+This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: https://deploy-preview-4--gatsbyjsdemo.netlify.app/ and the production deploymeny of the final site looks like: https://deploy-preview-14--gatsbyjsdemo.netlify.app/ (subject to change).
 
 
 ### Exercises
