@@ -7,8 +7,12 @@ export default function SpeakerPage({ data }) {
   return (
     <Layout>
       <div>
-        <h1>{speaker.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: speaker.name }} />
+        <h1 className="text-5xl font-extrabold text-blue-500 tracking-tight font-inter p-4">
+          {speaker.title}
+        </h1>
+        <h2 className="text-4xl font-extrabold  tracking-tight font-inter p-4">
+          with {speaker.name}
+        </h2>
       </div>
     </Layout>
   );
