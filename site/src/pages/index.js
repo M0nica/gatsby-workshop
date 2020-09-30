@@ -33,7 +33,17 @@ const Hero = ({ talks }) => (
       Schedule
     </h2>
     {talks.map((talk) => {
-      return <TalkCard talk={talk.node} />;
+      return (
+        <TalkCard
+          talk={{
+            ...talk.node,
+            link: `speaker/${talk.node.name
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/(^-|-$)+/g, "")}`,
+          }}
+        />
+      );
     })}
   </div>
 );
