@@ -52,6 +52,7 @@ and returns data in this shape from GraphQL
 ## Exercise 🤓
 
 - Render high-level talk information (talk/speaker name/time/avatar) on the index page.
+- Add a link to the navigation with an anchor link to the schedule
 
 ## Starter Code
 
