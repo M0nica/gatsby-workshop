@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
-import Avatar from "../images/woman-generated-avatar-1.png";
 
 export default function speakerCard({ speakers }) {
   return (
     <div className="flex items-center flex-wrap ">
-      {speakers.map(({ name, link }) => (
+      {speakers.map(({ node }) => (
         <div className="w-1/3 p-2">
           <img
             className="rounded-full "
-            src={Avatar}
-            alt={`Avatar of ${name}`}
+            src={node.avatar}
+            alt={`Avatar of ${node.name}`}
           />
-          <Link to={link ? link : ""}> {name} </Link>
+          <Link to={node.link ? node.link : ""}> {node.name} </Link>
         </div>
       ))}
     </div>
