@@ -36,7 +36,7 @@ const Hero = ({ talks }) => (
       Schedule
     </h2>
     {talks.map((talk) => {
-      return <TalkCard talk={talk.node} />;
+      return <TalkCard talk={talk.node} key={talk.node.name} />;
     })}
   </div>
 );
