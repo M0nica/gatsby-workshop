@@ -46,6 +46,9 @@ export default NotFoundPage;
 - Update the banner component so that it has a performant Link to the tickets page. 
 - The banner should also dynamically pull in the name of the conference from the site configuration in the gatsby-config 
 
+## Preview of Finished Exercise:
+![screenshot of site with banner at the top advertising that tickets are on sale](./images/exercise-5-add-sitewide-banner.png )
+
 ## Starter Code
 - There’s a pre-made Banner component you can use in src/components/banner.js for this exercise. 
  
