@@ -6,6 +6,9 @@ Gatsby automagically turns Reacts component defined in `src/pages/*`into pages. 
 1. Create a new file `tickets.js` in `src/pages` and copy and paste the below starter code
 2. Go to http://localhost:8000/tickets to view the base tickets page
 3. Update the ticket page to dynamically replace placeholder conference with then name of the conference from the `gatsby-config` file. 
+
+## Preview of Finished Exercise:
+![screenshot of ticket page with ticket information](./images/exercise-3-add-tickets-page.png)
  
 ## Starter Code for tickets.js
  
