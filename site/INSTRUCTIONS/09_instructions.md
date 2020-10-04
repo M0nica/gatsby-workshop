@@ -2,7 +2,7 @@
 
 ## Background 📚
 
-In the previous exercise we programmatically created speaker/tlak pages where each speaker/talk had a slug generated and added to GraphQL. Now that we have that data let's update the `talkCards` to `Link` to the appropriate place.
+In the previous exercise we programmatically created speaker/talk pages where each speaker/talk had a slug generated and added to GraphQL. Now that we have that data let's update the `talkCards` to `Link` to the appropriate place.
 
 
 
