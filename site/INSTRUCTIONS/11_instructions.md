@@ -9,6 +9,10 @@ Let's add a `/speakers` page to the site that displays headshots for each speake
 - Update the SpeakerCard to link to the individual talk/speaker page for its speaker
 - Create `speaker.js` page which queries for speaker data and renders it using the `SpeakerCard` component 
 
+## Preview of Finished Exercise:
+
+![screenshot of final speakers page](./images/exercise-11-add-speakers-page.png)
+
 ## Files 🗂
 - site/src/components/header.js
 - site/src/components/speakerCards.js
