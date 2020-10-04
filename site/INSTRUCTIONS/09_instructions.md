@@ -10,7 +10,7 @@ In the previous exercise we programmatically created speaker/tlak pages where ea
 
 - Update the `talkCard` component to link to the slug for a given talk. 
 
-```
+
 ## Files 🗂
 
 - `site/src/components/talkCard.js`
