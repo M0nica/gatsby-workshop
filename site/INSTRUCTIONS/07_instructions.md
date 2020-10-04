@@ -54,6 +54,10 @@ and returns data in this shape from GraphQL
 - Render high-level talk information (talk/speaker name/time/avatar) on the index page.
 - Add a link to the navigation with an anchor link to the schedule
 
+## Preview of Finished Exercise:
+
+![screenshot of index page with speaker data](./images/exercise-7-render-speaker-data.png)
+
 ## Starter Code
 
 - Import the `TalkCard` component from `src/components/talkCard` into the `index.js` page and pass in talk information (speaker name, time, title, avatar) as props.
