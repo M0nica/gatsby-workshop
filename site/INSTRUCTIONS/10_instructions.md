@@ -11,6 +11,10 @@ We are storing the speaker data for our site at `site/src/data/speakers.yml` san
 - If a talk doesn't yet have a description it should instead display text saying "More information will be available soon".
 
 
+## Preview of Finished Exercise:
+
+![screenshot of talk descriptions on speaker page](./images/exercise-10-add-talk-descriptions.png)
+
 ## Files 🗂
 - site/src/templates/speaker-page.js
 - site/src/data/speakers.yml
