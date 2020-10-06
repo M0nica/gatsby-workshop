@@ -16,7 +16,7 @@ Slides: monica.dev/gatsbyworkshop
 
 # Hi, I'm Monica 👋🏾
 
-I'm a software engineer who is passionate about making contributing to open-source more approachable, creating technology to elevate people, and building community. I've contributed to GatsbyJS ecosystem and have maintained several Gatsby sites.
+I'm a software engineer building educational technology at Newsela. I am passionate about making contributing to open-source more approachable, creating technology to elevate people, and building community. I've contributed to GatsbyJS ecosystem and have been a core maintainer of several sites built with GatsbyJS.
 
 <img
   style={{ maxWidth: "20%", textAlign: "center", display: "inline" }}
@@ -38,8 +38,8 @@ I'm a software engineer who is passionate about making contributing to open-sour
 />
 
 <SpeakerNotes>
-  I consider my personal site my personal playground and have really enjoyed the
-  developer experience with Gatsby.
+  I decided to use Gatsby a few years ago to revamp my personal site. As I started using Gatsby I got more comfortable with GraphQL and React and had the opportunity to tinker with my site which I consider my personal site my personal playground. I have really enjoyed the
+  developer experience with Gatsby. Once you're comfortable with it, depending on your use-case it can be quite delightful.
 </SpeakerNotes>
 
 ---
@@ -48,15 +48,94 @@ I'm a software engineer who is passionate about making contributing to open-sour
 
 - Gatsby fundamentals
 - How to set up a basic Gatsby site
-- When to use a plugin vs starter vs theme
 - How to use GraphQL in Gatsby to generate a data layer available to your site’s components
-- What is MDX? How to import components in Markdown with MDX
+- What is MDX? 
 - Deploying site to Netlify
 
 ---
 
 # What is Gatsby?
 
+- An open-source, React Framework with a solid developer experience for generating static sites. 
+- It was designed to be performant and accessible
+
+<img
+  style={{ maxWidth: "80%", textAlign: "center" }}
+  src="/gatsby-technologies.png"
+/>
+
 ---
+
+## generating? static sites?
+<img
+  style={{ maxWidth: "80%", textAlign: "center" }}
+  src="/gatsby-hydration.png"
+/>
+<SpeakerNotes>
+Let's walk through what happens in Server-Side Rendered applications like Gatsby when all the pages for the site are statically generated at once in the server.
+
+First, you write the site in React ⚛️ then Gatsby or Next (Static Site Generation) creates a production build of your site using ReactDOMServer, a React server-side API to generate HTML from React. When someone visits your website the first thing they'll see is the HTML generated from the server. JavaScript then loads after the initial page load and the ReactDOM.hydrate() API kicks in to hydrate the HTML page that was rendered from the server with JavaScript. After Hydration the React reconciler APIs take over and the site becomes interactive.
+</SpeakerNotes>
+
+
+---
+
+## Toggling JavaScript: SSR vs. CSR
+
+<img
+  style={{ maxWidth: "50%", textAlign: "center" }}
+  src="/gatsby-toggle-javascript.gif"
+/>
+<img
+  style={{ maxWidth: "50%", textAlign: "center" }}
+  src="/create-react-app-toggle-javascript.gif"
+/>
+
+
+
+
+Left: Gatsby site, where when JavaScript is toggled on/off there is very little visible change on the left aside from the image loading as most of the HTML was available without JavaScript. Right: Create React App with visible flash.
+
+
+<SpeakerNotes>
+Let's compare how a Server-Side and Client-Side rendered applications appear when JavaScript is enabled or disabled. For these two examples, I used Gatsby and Create React App for these technologies.
+
+In contrast, in the above image of a Create-React-App which uses client-side rendering and the browser is responsible for constructing the initial HTML. Due to this we just see the bare-bones HTML as opposed to a full HTML document when JavaScript is disabled.
+</SpeakerNotes>
+
+---
+
+## Gatsby Plugin Library
+<img
+  style={{ maxWidth: "80%", textAlign: "center" }}
+  src="/gatsby-plugins.png"
+/>
+
+<SpeakerNotes>The Gatsby Plugin Library is a rich ecosytem of open-source plugins designed for Gatsby -- with things from extending syntax support for MDX, adding new data sources, generate social cards for social media, etc. If there's something you're interested in exploring in Gatsby the Gatsby Plugin Library is a good place to look for ideas and resources </SpeakerNotes>
+
+---
+
+## Gatsby Starters
+
+<img
+  style={{ maxWidth: "80%", textAlign: "center"}}
+  src="/gatsby-starters.png"
+/>
+
+<SpeakerNotes>Gatsby has a collection of community sourced starters if you want to get an ew Gatsby site up and running quickly. The styling and functionality from starter to starter vary quite a bit. </SpeakerNotes>
+
+---
+## Gatsby-Image
+
+One of my favorite Gatsby optimizations is `gatsby-image` which supports different effects like `traced-svg`. Traced SVG is an effect to quickly render SVGs for images as placeholders while the final image loads.
+
+<img
+  style={{ maxWidth: "80%", textAlign: "center"}}
+  src="/header-traced-svg-example.gif"
+/>
+
+---
+
+# Let's get started with the exercises! 👍🏾
 
 </SlidePage>
