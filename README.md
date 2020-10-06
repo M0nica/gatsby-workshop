@@ -1,3 +1,5 @@
+https://app.netlify.com/start/deploy?repository=https://github.com/M0nica/gatsby-workshop/tree/main/site
+
 <div> 
   <h1 align="center">Gatsby Workshop</h1>
   <p>
