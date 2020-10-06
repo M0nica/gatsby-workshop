@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
-import Avatar from "../images/woman-generated-avatar-1.png";
 
-export default function talkCard({ talk }) {
-  const { speaker, title, time, link } = talk;
+export default function TalkCard({ talk }) {
+  const { name, title, time, avatar, link = "" } = talk;
   return (
-    <Link to={link ? link : ""}>
+    <Link to={link}>
       <div className="flex items-center hover:bg-indigo-100 border px-4 py-2">
         <img
           className="w-10 h-10 rounded-full mr-4"
-          src={Avatar}
-          alt={`Avatar of ${speaker}`}
+          src={`/${avatar}`}
+          alt={`Avatar of ${name}`}
         />
-        <div className="text-lg">
-          <p className="text-gray-900 leading-none">{speaker}</p>
+        <div className="text-lg text-left">
+          <p className="text-gray-900 leading-none">{name}</p>
           <p className="text-xl text-gray-600">{title}</p>
           <time>{time}</time>
         </div>

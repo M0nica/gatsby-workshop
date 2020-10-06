@@ -21,14 +21,7 @@ In our case in addition to using the gatsby-source-filesystem plugin we should u
  
  },
  
- plugins: [
- 
-
-
- 
-
-
- 
+ plugins: [ 
 `gatsby-transformer-yaml`,
    {
      resolve: `gatsby-source-filesystem`,
@@ -36,15 +29,13 @@ In our case in addition to using the gatsby-source-filesystem plugin we should u
        path: `./src/data`,
      },
    },
- 
  ]
- 
 });
 ```
  
  
 ## Exercise 🤓
-Add a new data type for conference speakers and render high-level talk information (talk/speaker/time) on main page
+Add a new data type for conference speakers. Hint: You will need to configure `gatsby-transformer-yaml` and `gatsby-source-filesystem` in the `gatsby-config` file. 
 
 ## Files 🗂
 - site/gatsby-config.js
@@ -70,7 +61,7 @@ query FetchSpeakers {
  
 ```
 
-  at http://localhost:8000/___graphql?query=query%20FetchSpeakers%20%7B%0A%20%20allSpeakersYaml%20%7B%0A%20%20%20%20edges%20%7B%0A%20%20%20%20%20%20node%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20avatar%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20time%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=FetchSpeakers and have it return something that looks like: 
+  in the [GraphQL Playground](http://localhost:8000/___graphql?query=query%20FetchSpeakers%20%7B%0A%20%20allSpeakersYaml%20%7B%0A%20%20%20%20edges%20%7B%0A%20%20%20%20%20%20node%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20avatar%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20title%0A%20%20%20%20%20%20%20%20time%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=FetchSpeakers) and have it return something that looks like: 
   
   ```
   {
@@ -100,3 +91,11 @@ query FetchSpeakers {
   },
 }
 ```
+
+
+
+## Example Solution Code
+- [Exercise 6 - Add Speaker Data to GraphQL](https://github.com/M0nica/gatsby-workshop/pull/9/files)
+
+## Example Solution Demo
+- https://deploy-preview-9--gatsbyjsdemo.netlify.app/
