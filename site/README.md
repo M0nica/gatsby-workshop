@@ -1,11 +1,10 @@
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/M0nica/gatsby-workshop"><img src="https://www.netlify.com/img/deploy/button.svg" alt="deploy to netlify button"></a>
 
 ## [Demo](https://deploy-preview-14--gatsbyjsdemo.netlify.app)
 
 <div align="center">
   <img src="https://image.ibb.co/cJjPN7/gatsby_tailwind.png" alt="Gatsby and Tailwind CSS logos">
 </div>
-
-
 
 ## Get started
 
@@ -17,8 +16,8 @@ yarn or npm install
 yarn start or npm start
 ```
 
+## Technologies Used:
 
-## Technologies Used: 
 ### What is Tailwind?
 
 > "Tailwind is a utility-first CSS framework for rapidly building custom user interfaces."
@@ -27,8 +26,6 @@ yarn start or npm start
 ### What is Gatsby?
 
 > "Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps." -[Gatsby](https://www.gatsbyjs.org/)
-
-
 
 ## Build your site
 
@@ -45,12 +42,9 @@ Each time you build, the cache and public folder will be deleted to prevent stal
 
 - `yarn fix` or `npm run fix` - Run Prettier and ESLint with the `--fix` option
 
-
 ## Lighthouse Audit
 
 <img src="https://res.cloudinary.com/gooddeed/image/upload/v1586015947/GitHub%20Screenshots/Gatsby-Custom-Tailwind/Lighthouse.png" alt="Lighthouse Audit">
-
-
 
 ## Resources
 

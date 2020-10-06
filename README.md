@@ -1,4 +1,5 @@
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/M0nica/gatsby-workshop/tree/main/site"><img src="https://www.netlify.com/img/deploy/button.svg" alt="deploy to netlify button"></a>
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/M0nica/gatsby-workshop"><img src="https://www.netlify.com/img/deploy/button.svg" alt="deploy to netlify button"></a>
+
 <div> 
   <h1 align="center">Gatsby Workshop</h1>
   <p>
@@ -71,7 +72,6 @@ yarn start
 
 This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: https://deploy-preview-4--gatsbyjsdemo.netlify.app/ and the production deploymeny of the final site looks like: https://deploy-preview-14--gatsbyjsdemo.netlify.app/ (subject to change).
 
-
 ### Exercises
 
 The exercises each have a branch associated with them. You can find the exercises under `site/INSTRUCTIONS/` in files labelled like `01_instructions.md`. To get the latest working code for an exercise check out the exercise solution branch.
@@ -103,11 +103,11 @@ The exercises each have a branch associated with them. You can find the exercise
 ### View Slides
 
 - Go to www.monica.dev/gatsbyworkshop
--  The slides can be run locally from this repo by doing the following:
-  - `cd slides`
-  - `npm install`
-  - `npm run dev`
-  - View slides locally at: [http://localhost:3000/](http://localhost:3000/)
+- The slides can be run locally from this repo by doing the following:
+- `cd slides`
+- `npm install`
+- `npm run dev`
+- View slides locally at: [http://localhost:3000/](http://localhost:3000/)
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
