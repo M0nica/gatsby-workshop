@@ -83,10 +83,10 @@ The exercises each have a branch associated with them. You can find the exercise
 - [05 • Add site-wide banner](site/INSTRUCTIONS/05_instructions.md)
 - [06 • Adding Speaker/Talk Data Type](site/INSTRUCTIONS/06_instructions.md)
 - [07 • Render Speaker/Talk Data Type](site/INSTRUCTIONS/07_instructions.md)
-- 08 • Programmatically Generate Speaker Pages
-- 09 • Link to Speaker Pages
-- 10 • Add Talk Descriptions and Render on Speaker Pages
-- 11 • Add Page Listing All Speakers
+- [08 • Programmatically Generate Speaker Pages](site/INSTRUCTIONS/08_instructions.md)
+- [09 • Link to Speaker Pages](site/INSTRUCTIONS/09_instructions.md)
+- [10 • Add Talk Descriptions and Render on Speaker Pages](site/INSTRUCTIONS/10_instructions.md)
+- [11 • Add Page Listing All Speakers](site/INSTRUCTIONS/11_instructions.md)
 
 ### Workflow
 
