@@ -8,15 +8,33 @@ Monica Powell &bull; Jamstack Conf 2020
 
 @waterproofheart · monica@aboutmonica.com
 
-Slides: monica.dev/gatsbyworkshop
-
 </Cover>
+
+<SpeakerNotes>
+  {" "}
+  Thank you for joining me today for this getting started with Gatsby Workshop!
+</SpeakerNotes>
+
+---
+
+# Important Links
+
+These slides are available at: monica.dev/gatsbyworkshop
+
+Code: <a href="https://github.com/M0nica/gatsby-workshop">github.com/M0nica/gatsby-workshop</a>
+
+<SpeakerNotes>
+  {" "}
+  You'll want to visit these links to view the slides on your computer and to
+  view the code that we will be working with throughout the workshop. We will go
+  through the installation process in a bit.{" "}
+</SpeakerNotes>
 
 ---
 
 # Hi, I'm Monica 👋🏾
 
-I'm a software engineer who is passionate about making contributing to open-source more approachable, creating technology to elevate people, and building community. I've contributed to GatsbyJS ecosystem and have maintained several Gatsby sites.
+I'm a software engineer building educational technology at Newsela. I am passionate about making contributing to open-source more approachable, creating technology to elevate people, and building community. I've contributed to GatsbyJS ecosystem and have been a core maintainer of several sites built with GatsbyJS.
 
 <img
   style={{ maxWidth: "20%", textAlign: "center", display: "inline" }}
@@ -25,9 +43,11 @@ I'm a software engineer who is passionate about making contributing to open-sour
 
 <SpeakerNotes>
   {" "}
-  I'm Monica! I'm a software engineer and community organizer. I'm passionate
-  about making technology, like open-source, more accessible and created a
-  Meetup group, React Ladies for women and non-binary react developers.
+  I'm Monica! I'm a software engineer at Newsela and community organizer. I'm
+  passionate about making technology, like open-source, more accessible. I
+  created a Meetup group, React Ladies for women and non-binary react
+  developers. I've really enjoyed developing using Gatsby and am looking forward
+  to helping you get started with Gatsby.
 </SpeakerNotes>
 
 ---
@@ -38,8 +58,48 @@ I'm a software engineer who is passionate about making contributing to open-sour
 />
 
 <SpeakerNotes>
-  I consider my personal site my personal playground and have really enjoyed the
-  developer experience with Gatsby.
+  I decided to use Gatsby a few years ago to revamp my personal site. As I
+  started using Gatsby I got more comfortable with GraphQL and React and had the
+  opportunity to tinker with my site which I now consider my personal digital
+  playground. I have really enjoyed the developer experience with Gatsby as it
+  can be be quite delightful.
+</SpeakerNotes>
+
+---
+
+# A Glimpse at My Playground
+
+<img
+  style={{ maxWidth: "70%", textAlign: "center" }}
+  src="/gatsby-search.png"
+/>
+Using React Hooks to filter posts{" "}
+
+Related post: https://www.aboutmonica.com/blog/create-gatsby-blog-search-tutorial
+
+<SpeakerNotes>
+  If you're curious what my digital playground looks like you can go to
+  monica.dev. This is a screenshot of my content index page which features a
+  filter feature powered by React Hooks. I wrote about how I built the initial
+  search feature functionality on my site at that article.
+</SpeakerNotes>
+
+---
+
+# A Glimpse at My Playground
+
+<img style={{ maxWidth: "70%", textAlign: "center" }} src="/header.gif" />
+
+Using gatsby-image with art direction
+
+Related post: https://www.aboutmonica.com/blog/2020-06-24-exploring-art-direction-in-gatsby
+
+<SpeakerNotes>
+  This is waht the header of my site looks like and it features gatsby's image
+  techology which is `gatsby-image` and allows the browser to preload only the
+  resoruce it needs based on the initial view port size with art direction. I
+  also wrote a bit about how I use art direction in Gatsby if you want to learn
+  more.{" "}
 </SpeakerNotes>
 
 ---
@@ -47,16 +107,179 @@ I'm a software engineer who is passionate about making contributing to open-sour
 # What We'll Learn Today
 
 - Gatsby fundamentals
-- How to set up a basic Gatsby site
-- When to use a plugin vs starter vs theme
-- How to use GraphQL in Gatsby to generate a data layer available to your site’s components
-- What is MDX? How to import components in Markdown with MDX
+- How to customize and configure a Gatsby site
+- How to use GraphQL in Gatsby to generate a data layer available to your site's components
 - Deploying site to Netlify
+
+<SpeakerNotes>
+  {" "}
+  Some of the things we will cover today are fundamentals, how to customize and
+  configure a gatsby site, how to use graphql in gatsby to generate a data layer
+  and deploying sites to netlify
+</SpeakerNotes>
+
+---
+
+# What We'll Be Building
+
+A mock conference site built with GatsbyJS that is deployed to Netlify. The site will have multiple pages, including a page with headshots for all speakers, ticket page, individual pages for each talk and more!
+
+<img
+  style={{ maxWidth: "70%", textAlign: "center" }}
+  src="/final-site-preview.png"
+/>
+
+<SpeakerNotes>
+  We'll be building A mock conference site that is deployed to Netlify. The site
+  will have multiple pages, including a page with headshots for all speakers,
+  ticket page, individual pages for each talk and more!
+</SpeakerNotes>
 
 ---
 
 # What is Gatsby?
 
+- An open-source, React framework with a solid developer experience for generating static sites
+- Gatsby was designed to be performant and accessible
+- Plus all the benefits of Jamstack (performant, cheap-to-scale, secure, developer experience, etc.)
+
+<img
+  style={{ maxWidth: "80%", textAlign: "center" }}
+  src="/gatsby-technologies.png"
+/>
+
+<SpeakerNotes>
+  Gatsby is a React based static site generator that is performant and designed
+  with accessability in mind. A lot of the benefits of Jamstack artchitecture
+  you'll get when using Gatsby.
+</SpeakerNotes>
+
 ---
 
+## generating? static sites?
+
+<img
+  style={{ maxWidth: "80%", textAlign: "center" }}
+  src="/gatsby-hydration.png"
+/>
+
+<SpeakerNotes>
+You may be wondering more about generation and static sites so. Let's walk through what happens in Server-Side Rendered applications like Gatsby where all the pages for the site are statically generated at once in the server.
+
+First, you write the site in React ⚛️ then Gatsby or Next (Static Site Generation) creates a production build of your site using ReactDOMServer, a React server-side API to generate HTML from React. When someone visits your website the first thing they'll see is the HTML generated from the server. JavaScript then loads after the initial page load and the ReactDOM.hydrate() API kicks in to hydrate the HTML page that was rendered from the server with JavaScript. After Hydration the React reconciler APIs take over and the site becomes interactive.
+
+</SpeakerNotes>
+
+---
+
+## Toggling JavaScript: SSR vs. CSR
+
+<img
+  style={{ maxWidth: "50%", textAlign: "center" }}
+  src="/gatsby-toggle-javascript.gif"
+/>
+<img
+  style={{ maxWidth: "50%", textAlign: "center" }}
+  src="/create-react-app-toggle-javascript.gif"
+/>
+
+Left: Gatsby site, where when JavaScript is toggled on/off there is very little visible change on the left aside from the image loading as most of the HTML was available without JavaScript. Right: Create React App with visible flash.
+
+<SpeakerNotes>
+Let's compare how a Server-Side and Client-Side rendered applications appear when JavaScript is enabled or disabled. For these two examples, I used Gatsby and Create React App for these technologies.
+
+In contrast, in the above image of a Create-React-App which uses client-side rendering and the browser is responsible for constructing the initial HTML. Due to this we just see the bare-bones HTML as opposed to a full HTML document when JavaScript is disabled.
+
+</SpeakerNotes>
+
+---
+
+## Gatsby Plugin Library
+
+<img
+  style={{ maxWidth: "80%", textAlign: "center" }}
+  src="/gatsby-plugins.png"
+/>
+
+<SpeakerNotes>
+  The Gatsby Plugin Library is a rich ecosytem of open-source plugins designed
+  for Gatsby -- with things from extending syntax support for MDX, adding new
+  data sources, generate social cards for social media, etc. If there's
+  something you're interested in exploring in Gatsby the Gatsby Plugin Library
+  is a good place to look for ideas and resources{" "}
+</SpeakerNotes>
+
+---
+
+## Gatsby Plugin Examples
+
+- `gatsby-plugin-mdx` to add MDX support. **MDX** allows you to write Markdown that allows you to import JSX React components
+- `mdx-embed` (originally was gatsby-mdx-embed) to embed media content such as YouTube videos, Tweets, Codepens, Egghead videos and many more straight into .mdx files.
+- `gatsby-source-filesystem` to add local file data to site's GraphQL data layer
+- `gatsby-remark-twitter-cards`
+
+<img
+  style={{ maxWidth: "30%", textAlign: "center", verticalAlign: "middle" }}
+  src="/social-media-card.png"
+/> <img
+  style={{ maxWidth: "50%", textAlign: "center", verticalAlign: "middle" }}
+  src="/article-list-mdx.gif"
+/>
+
+<SpeakerNotes>
+  {" "}
+  Some Gatsby plugins I've used are gatsby-plugin-mdx, mdx-embed,
+  gatsby-source-filesystem and gatsby-remark-twitter-cards. Talk through
+  examples of gatsby-remark-twitter cards and gatsby-plugin-mdx (official mdx
+  plugin){" "}
+</SpeakerNotes>
+
+---
+
+## Gatsby Starters, Themes, Recipes and more
+
+<img
+  style={{ maxWidth: "80%", textAlign: "center" }}
+  src="/gatsby-starters.png"
+/>
+
+<SpeakerNotes>
+  Gatsby has a collection of community sourced starters if you want to get an ew
+  Gatsby site up and running quickly. The styling and functionality from starter
+  to starter vary quite a bit. In addition to starters they also have themes
+  which are more composable versions of starters and are experimenting with
+  recipes to quickly add new features to a site via CLI. You should check out
+  the Gatsby site for more information. We will mostly be working with Gatsby
+  plugins today.
+</SpeakerNotes>
+
+---
+
+## Gatsby-Image
+
+One of my favorite Gatsby optimizations is `gatsby-image` which supports different effects like `traced-svg`. Traced SVG is an effect to quickly render SVGs for images as placeholders while the final image loads.
+
+<img
+  style={{ maxWidth: "80%", textAlign: "center" }}
+  src="/header-traced-svg-example.gif"
+/>
+
+Learn more at: https://using-gatsby-image.gatsbyjs.org/
+
+<SpeakerNotes>
+  Gatsby also has a library called gatsby-image tht has image loading
+  optimizations. One of my favorites is traced svg which puts a placeholder svg
+  in the shape of your image until your image loads. Check out the link to see
+  the various gatsby-image loading effects
+</SpeakerNotes>
+
+---
+
+# Let's get started with the exercises! 👍🏾
+
+1. Go to https://github.com/M0nica/gatsby-workshop
+2. Click Deploy to Netlify Button
+3. We'll go over the first exercise together: https://github.com/M0nica/gatsby-workshop/blob/main/site/INSTRUCTIONS/00_instructions.md
+
+<SpeakerNotes>It's time to get started. Please go to the main repo, click deploy to netlify and once you're ready we will go over the first exercise together.</SpeakerNotes>
 </SlidePage>
