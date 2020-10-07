@@ -1,7 +1,23 @@
 import React from "react";
-import { Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import { FaTwitter } from "react-icons/fa";
 
 export default function footer() {
+  const data = useStaticQuery(graphql`
+    query FooterQuery {
+      site {
+        siteMetadata {
+          author
+          siteUrl
+          social {
+            twitter
+          }
+          title
+          description
+        }
+      }
+    }
+  `);
   return (
     <div>
       <div className="bg-white ">
@@ -11,13 +27,14 @@ export default function footer() {
               to="/"
               className="no-underline text-gray-700 hover:text-gray-500"
             >
-              &copy; SketchXConf 2020
+              &copy; {data.site.siteMetadata.title} &bull;{" "}
+              {data.site.siteMetadata.description}
             </Link>
           </p>
 
           <p>
             <a
-              href="https://monica.dev/gatsbyworkshop"
+              href={data.site.siteMetadata.url}
               className="text-gray-700 hover:text-gray-500 no-underline "
               target="_blank"
               rel="noopener noreferrer"
@@ -31,6 +48,17 @@ export default function footer() {
                 />
               </svg>
             </a>
+            <p>
+              <a
+                href={`https://twitter.com/${data.site.siteMetadata.social.twitter}`}
+                className="text-gray-700 hover:text-gray-500 no-underline "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="sr-only">Twitter</span>
+                <FaTwitter />
+              </a>
+            </p>
           </p>
         </nav>
       </div>
