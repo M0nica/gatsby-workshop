@@ -1,3 +1,5 @@
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/M0nica/gatsby-workshop"><img src="https://www.netlify.com/img/deploy/button.svg" alt="deploy to netlify button"></a>
+
 <div> 
   <h1 align="center">Gatsby Workshop</h1>
   <p>
@@ -58,7 +60,7 @@ To get the app up and running (and really see if it worked), run:
 
 ```shell
 cd site
-npm start
+npm run start
 ```
 
 or
@@ -68,11 +70,7 @@ cd site
 yarn start
 ```
 
-This should start up your browser. You can also open the production deployment: LINK TBD
-
-## Running the tests
-
-TBD
+This should start up the site locally in your browser at http://localhost:8000/. For reference the production deployment of the inital site looks like: https://deploy-preview-4--gatsbyjsdemo.netlify.app/ and the production deploymeny of the final site looks like: https://deploy-preview-14--gatsbyjsdemo.netlify.app/ (subject to change).
 
 ### Exercises
 
@@ -86,15 +84,15 @@ The exercises each have a branch associated with them. You can find the exercise
 - [05 • Add site-wide banner](site/INSTRUCTIONS/05_instructions.md)
 - [06 • Adding Speaker/Talk Data Type](site/INSTRUCTIONS/06_instructions.md)
 - [07 • Render Speaker/Talk Data Type](site/INSTRUCTIONS/07_instructions.md)
-- 08 • Programmatically Generate Speaker Pages
-- 09 • Link to Speaker Pages
-- 10 • Add Talk Descriptions and Render on Speaker Pages
-- 11 • Add Page Listing All Speakers
+- [08 • Programmatically Generate Speaker Pages](site/INSTRUCTIONS/08_instructions.md)
+- [09 • Link to Speaker Pages](site/INSTRUCTIONS/09_instructions.md)
+- [10 • Add Talk Descriptions and Render on Speaker Pages](site/INSTRUCTIONS/10_instructions.md)
+- [11 • Add Page Listing All Speakers](site/INSTRUCTIONS/11_instructions.md)
 
 ### Workflow
 
-- Checkout the exercise branch
-- Read through the `INSTRUCTIONS.md`
+- Checkout the main branch
+- Read through the instructions in `site/INSTRUCTIONS` and complete one set of instructions at a time
 - Start exercise
 - Go through every mentioned file and follow the instructions
 - We all come back together
@@ -105,19 +103,16 @@ The exercises each have a branch associated with them. You can find the exercise
 ### View Slides
 
 - Go to www.monica.dev/gatsbyworkshop
-- Or in this repo:
-  - `cd slides`
-  - `npm install`
-  - `npm run dev`
-  - View slides locally at: [http://localhost:3000/](http://localhost:3000/)
+- The slides can be run locally from this repo by doing the following:
+- `cd slides`
+- `npm install`
+- `npm run dev`
+- View slides locally at: [http://localhost:3000/](http://localhost:3000/)
 
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org
 [git]: https://git-scm.com/
-[emojis]: https://github.com/kentcdodds/all-contributors#emoji-key
-[all-contributors]: https://github.com/kentcdodds/all-contributors
 [win-path]: https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/
 [mac-path]: http://stackoverflow.com/a/24322978/971592
-[issue]: https://github.com/kentcdodds/bookshelf/issues/new
 <!-- prettier-ignore-end -->

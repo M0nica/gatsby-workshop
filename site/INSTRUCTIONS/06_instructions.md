@@ -93,3 +93,11 @@ in the [GraphQL Playground](http://localhost:8000/___graphql?query=query%20Fetch
 },
 }
 ```
+
+
+
+## Example Solution Code
+- [Exercise 6 - Add Speaker Data to GraphQL](https://github.com/M0nica/gatsby-workshop/pull/9/files)
+
+## Example Solution Demo
+- https://deploy-preview-9--gatsbyjsdemo.netlify.app/

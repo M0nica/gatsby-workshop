@@ -37,3 +37,10 @@ Note: Changes to the gatsby-config require restarting the server to see them on 
 - src/images/pencil-icon.png
 - gatsby-config.js
 - src/components/header.js
+
+## Example Solution Code
+- [Exercise 1 Solution: customize the gatsby-config](https://github.com/M0nica/gatsby-workshop/pull/4/files)
+
+## Example Solution Demo
+- https://deploy-preview-4--gatsbyjsdemo.netlify.app/
+
