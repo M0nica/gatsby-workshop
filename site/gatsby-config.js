@@ -2,9 +2,12 @@
 module.exports = {
   siteMetadata: {
     title: `SketchXConf 2020`,
-    description: `description`,
-    author: `@you`,
-    siteUrl: `https://monica.dev/gatsbyworkshop`,
+    description: `A conference site mockup made from a Gatsby Workshop`,
+    author: `Richard Pastenes`,
+    social: {
+      twitter: `@richardpastenes`,
+    },
+    siteUrl: `https://gatsby-workshop-richard.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -17,7 +20,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/images/pencil-icon.png`,
+        icon: `src/images/favicon.png`,
       },
     },
     `gatsby-plugin-postcss`,
