@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-export default function footer() {
+export default function footer({ siteTitle, siteDescription }) {
   return (
     <div>
       <div className="bg-white ">
@@ -11,13 +11,13 @@ export default function footer() {
               to="/"
               className="no-underline text-gray-700 hover:text-gray-500"
             >
-              &copy; SketchXConf 2020
+              &copy; {siteTitle} &bull; {siteDescription}
             </Link>
           </p>
 
           <p>
             <a
-              href="https://monica.dev/gatsbyworkshop"
+              href="https://github.com/kstrickland0612"
               className="text-gray-700 hover:text-gray-500 no-underline "
               target="_blank"
               rel="noopener noreferrer"

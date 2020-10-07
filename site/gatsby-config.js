@@ -1,12 +1,19 @@
 /*eslint no-template-curly-in-string:0*/
 module.exports = {
   siteMetadata: {
-    title: `SketchXConf 2020`,
-    description: `description`,
-    author: `@you`,
-    siteUrl: `https://monica.dev/gatsbyworkshop`,
+    title: `GatsbyConf 2020`,
+    description: `A fun conference for fun people`,
+    author: `@kstrickland0612`,
+    siteUrl: `https://nostalgic-joliot-3c88b4.netlify.app`,
   },
   plugins: [
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -17,7 +24,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/images/pencil-icon.png`,
+        icon: `src/images/rainbow-icon.jpg`,
       },
     },
     `gatsby-plugin-postcss`,
