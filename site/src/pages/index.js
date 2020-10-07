@@ -52,6 +52,9 @@ function IndexPage() {
             name
             title
             time
+            fields {
+              slug
+            }
           }
         }
       }
