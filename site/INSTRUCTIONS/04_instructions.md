@@ -17,3 +17,9 @@ Add a link to the `/tickets` page.
 ## Extra Credit 💯
 
 Check out what other pages are on the site by navigating to: http://localhost:8000/nonsense. This links to the development version of the 404 page of the site. A nifty feature of Gatsby’s 404 pages in development is that it’ll show you other available routes in the application. Feel free to add any of the links listed here that aren’t available in the navigation to the header’s NavLinks
+
+## Example Solution Code
+- [Exercise 4: Add Link in Navigation](https://github.com/M0nica/gatsby-workshop/pull/7/files)
+
+## Example Solution Demo
+- https://deploy-preview-7--gatsbyjsdemo.netlify.app/

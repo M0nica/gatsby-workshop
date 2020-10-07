@@ -38,3 +38,10 @@ Update the footer to display another data value from the siteMetadata in additio
 
 ## Related Files 🗂
 - src/components/footer.js
+
+## Example Solution Code
+- [Exercise 2 - Make Footer Data Dynamic ](https://github.com/M0nica/gatsby-workshop/pull/5/files)
+
+## Example Solution Demo
+- https://deploy-preview-5--gatsbyjsdemo.netlify.app/
+
