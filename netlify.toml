@@ -1,0 +1,6 @@
+[build]
+  base = "site"
+  command = "gatsby build"
+  publish = "public"
+[dev]
+  command = "gatsby develop"
