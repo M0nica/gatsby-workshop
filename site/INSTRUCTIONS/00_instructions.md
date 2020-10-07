@@ -1,5 +1,4 @@
 # 00 • Running a Gatsby Application Locally
-
 ## Background 📚
 
 Gatsby websites are JavaScript applications and generally have a `package.json` that defines dependencies and scripts for development. In order to run this particular site you should:
@@ -19,3 +18,9 @@ Note: Changes to the gatsby-config require restarting the server to see them on 
 ## Files 🗂
 
 - package.json
+
+## Example Solution Code
+- n/a
+
+## Example Solution Demo
+- n/a
