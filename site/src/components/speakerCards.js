@@ -5,8 +5,7 @@ export default function speakerCard({ speakers }) {
   return (
     <div className="flex items-center flex-wrap ">
       {speakers.map(({ node }) => (
-        // TODO: pass slug from node into the Link component
-        <Link to="" className="w-1/3 p-2" key={node.name}>
+        <Link to={`/${node.fields.slug}`} className="w-1/3 p-2">
           <div>
             <img
               className="rounded-full inline"

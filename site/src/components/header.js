@@ -9,6 +9,7 @@ function Header({ siteTitle }) {
     { href: "/", name: "Home" },
     { href: "/tickets", name: "Tickets" },
     { href: "/#schedule", name: "Schedule" },
+    { href: "/speakers", name: "Speakers" },
   ];
 
   return (
