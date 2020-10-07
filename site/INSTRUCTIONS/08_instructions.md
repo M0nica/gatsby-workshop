@@ -37,7 +37,7 @@ export const query = graphql`
 
 ## Exercise 🤓
 
-- Generate a standalone speaker page for each talk/speaker by creating a `gatsby-config.js` file (starter code below)
+- Generate a standalone speaker page for each talk/speaker by creating a `gatsby-node.js` file (starter code below)
 - Create a src template at `src/templates/speaker-page.js` that renders the speaker data that is passed into the template from `createPages`
 
 ## Preview of Finished Exercise:
@@ -46,7 +46,7 @@ export const query = graphql`
 
 ## Starter Code
 
-- Add a `gatsby-config.js` file in the root of the site with the following code:
+- Add a `gatsby-node.js` file in the root of the site with the following code:
 ```
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
