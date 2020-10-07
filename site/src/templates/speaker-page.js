@@ -13,6 +13,9 @@ export default function SpeakerPage({ data }) {
         <h2 className="text-4xl font-extrabold  tracking-tight font-inter p-4">
           with {speaker.name}
         </h2>
+        <p className="text-sm">
+          {speaker.description || "More information will be available soon"}
+        </p>
       </div>
     </Layout>
   );
@@ -23,6 +26,7 @@ export const query = graphql`
     speakersYaml(fields: { slug: { eq: $slug } }) {
       name
       title
+      description
     }
   }
 `;
